@@ -9,7 +9,7 @@
  * @link      http://www.opensource-socialnetwork.org/licence
  */
 //setting up path so we can use it in entire file 
-//if your component folder have upper and lower case words please use same here.
+//if your component folder have upper and lower case characters please use same here.
 define('__OSSN_HELLO_WORLD__', ossn_route()->com . 'HelloWorld/');
 
 
