@@ -46,7 +46,7 @@ function ossn_hello_world() {
    ossn_load_css('hello.world');
    
    //lets create a new page called hello and print hello for that we need to use following code.
-  ossn_register_page('hello', 'ossn_hello_page');
+   ossn_register_page('hello', 'ossn_hello_page');
 }
 //page function that is create by ossn_register_page('hello', 'ossn_hello_page');
 //the code below is use to print hello world in page.
