@@ -44,7 +44,15 @@ function ossn_hello_world() {
    //now tell system to load file in header, here the first argument in function must be same as you 
    //used in ossn_new_css(<argument>) 
    ossn_load_css('hello.world');
+   
+   //lets create a new page called hello and print hello for that we need to use following code.
+  ossn_register_page('hello', 'ossn_hello_page');
 }
-
+//page function that is create by ossn_register_page('hello', 'ossn_hello_page');
+//the code below is use to print hello world in page.
+// vist http://mysite.com/hello to view page
+function ossn_hello_page(){
+  echo "Hello World";
+}
 //this line is used to register initliize function to ossn system
 ossn_register_callback('ossn', 'init', 'ossn_hello_world');
