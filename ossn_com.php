@@ -23,13 +23,13 @@ function ossn_hello_world() {
   * ossn.default is name of css.
   * use following code to add css in ossn default css file
   */
-   ossn_extend_view('css/ossn.default', 'components/HelloWorld/css/helloworld');
+   ossn_extend_view('css/ossn.default', 'css/helloworld');
    
    
   /**
   * For javascript you can do same thing , but instead of css you need to use js see code below:
   */   
-   ossn_extend_view('js/opensource.socialnetwork', 'components/HelloWorld/js/helloworld');
+   ossn_extend_view('js/opensource.socialnetwork', 'js/helloworld');
   
   /**
   * Sometime you can't extned other css or js file as it creates conflicts in css or js,
