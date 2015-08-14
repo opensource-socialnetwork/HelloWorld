@@ -39,7 +39,7 @@ function ossn_hello_world() {
   * To create seprate css link in header you can use following code.
   */
    //this will just tell system that new css file for header is available
-   ossn_new_css('hello.world', 'components/HelloWorld/css/standalone/helloworld');
+   ossn_new_css('hello.world', 'css/standalone/helloworld');
    
    //now tell system to load file in header, here the first argument in function must be same as you 
    //used in ossn_new_css(<argument>) 
