@@ -47,12 +47,23 @@ function ossn_hello_world() {
    
    //lets create a new page called hello and print hello for that we need to use following code.
    ossn_register_page('hello', 'ossn_hello_page');
+   ossn_register_page('hello_custom_template', 'hello_custom_template_page');
 }
 //page function that is create by ossn_register_page('hello', 'ossn_hello_page');
 //the code below is use to print hello world in page.
 // vist http://mysite.com/hello to view page
 function ossn_hello_page(){
-  echo "Hello World";
+	echo 'Hello World';
+}
+function hello_custom_template_page(){
+		//file components/HelloWorld/plugins/default/hellowolrd/hello_custom_page.php
+		//you can add custom text html inside this page
+    	$content = ossn_plugin_view('helloworld/hello_custom_page');
+		$title = 'ABC';
+		
+		//components\HelloWorld\plugins\default\theme\page\my_custom_page_template.php contain a basic html layout, you can include your stuff in head.
+		//Here ossn_load_css and load_js etc won't work as this is custom page outside OSSN templating system.
+    	echo ossn_view_page($title, $content, 'my_custom_page_template');	
 }
 //this line is used to register initliize function to ossn system
 ossn_register_callback('ossn', 'init', 'ossn_hello_world');
