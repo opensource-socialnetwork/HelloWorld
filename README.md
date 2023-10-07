@@ -3,7 +3,7 @@ HelloWorld
 
 Hello world component allows new developers to learn few things for ossn quickly.
 
-**v2.2**
+**v2.4**
 
 Covers
 
