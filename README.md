@@ -3,6 +3,13 @@ HelloWorld
 
 Hello world component allows new developers to learn few things for ossn quickly.
 
+**v2.2**
+
+Covers
+
+https://www.opensource-socialnetwork.org/documentation/view/6787/creating-configure-page-for-your-component-in-administrator-panel
+https://www.opensource-socialnetwork.org/documentation/view/6789/configuring-the-settings-for-your-component
+
 **v2.1**
 
 - custom html page option added you can define own html layout including your own css, js etc.  Visit yoursite.com/hello_custom_template  as example

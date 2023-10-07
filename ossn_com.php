@@ -12,7 +12,6 @@
 //if your component folder have upper and lower case characters please use same here.
 define('__OSSN_HELLO_WORLD__', ossn_route()->com . 'HelloWorld/');
 
-
 //this function is use to initilize ossn
 function ossn_hello_world() {
   /**
@@ -48,6 +47,10 @@ function ossn_hello_world() {
    //lets create a new page called hello and print hello for that we need to use following code.
    ossn_register_page('hello', 'ossn_hello_page');
    ossn_register_page('hello_custom_template', 'hello_custom_template_page');
+   
+   //create configure page and configuring the settings
+   ossn_register_action('helloworld/admin/settings', ossn_route()->com . 'HelloWorld/actions/settings.php');
+   ossn_register_com_panel('HelloWorld', 'settings');
 }
 //page function that is create by ossn_register_page('hello', 'ossn_hello_page');
 //the code below is use to print hello world in page.
