@@ -3,6 +3,11 @@ HelloWorld
 
 Hello world component allows new developers to learn few things for ossn quickly.
 
+**v 2.5**
+
+Covers https://www.opensource-socialnetwork.org/documentation/view/6986/creating-new-simple-form-for-your-component
+
+
 **v2.4**
 
 Covers
